@@ -109,7 +109,7 @@ def register(conn):
     try:
         cursor.execute(
             """INSERT INTO p_User (first_name, last_name, gmail, p_password)
-               VALUES (%s, %s, %s, %s)""",
+            VALUES (%s, %s, %s, %s)""",
             (first, last, email, password)
         )
         conn.commit()
